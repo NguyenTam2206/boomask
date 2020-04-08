@@ -6,10 +6,11 @@
 }
 
 body {
+    font-family: RoobertBoo;
     position: relative; 
 }
-#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#banner {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section2 {padding-top:50px;color: black;}
 #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
 #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
@@ -48,11 +49,20 @@ body {
     margin-top: 8px;
     background-color: #00bcd4;
     color : white;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
     color: black;
     background-color: transparent;
+}
+
+.navbar-store, .navbar-hotline {
+    float : right;
+    margin-top: 10px;
+    text-decoration: none;
+    color : black
 }
 
 @media (max-width: 767px) {
@@ -65,11 +75,76 @@ body {
     }
 }
 
+/* Banner */
+#banner {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-buynow {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 30px;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+}
+
+/* Mask */
+.mask {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.img {
+    background-color: bisque;
+    position: absolute;
+    z-index: 999;
+    height: 300px;
+    width: 500px;
+}
+
+.background-content {
+    background-color: #00bcd482;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .img {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .background-content {
+        padding-top: 70px;
+        padding-bottom : 70px;
+        padding-left: 150px;
+        padding-right: 70px;
+        margin-right : 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img {
+        margin-top: 35px;
+        margin-left: 80px;
+    }
+    .background-content {
+        padding-top: 70px;
+        padding-bottom : 70px;
+        padding-left: 150px;
+        padding-right: 120px;
+        margin-right : 80px;
+    }
+}
+.content-title {
+    font-size: 30px;
+}
+
 /* Phone Icon */  
   .Phone {
     position: fixed;
     bottom : 20px;
     right: 20px;
+    z-index : 1000;
     display: block;
     margin: 0;
     width: 1em;
