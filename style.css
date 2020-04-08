@@ -15,10 +15,6 @@ body {
 #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
 
 /*Navbar*/
-.nav-background {
-    background-color: white;
-}
-
 .navbar-brand {
     padding-top : 10px;
     float : right;
@@ -32,6 +28,7 @@ body {
 }
 .navbar-inverse {
     border-color: #a7a7a7;
+    background-color: white;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
