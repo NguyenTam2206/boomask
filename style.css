@@ -31,6 +31,8 @@ body {
     color: black;
     background-color: #f8f8f8;
     padding-bottom : 50px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #section4 {
@@ -75,10 +77,13 @@ body {
 .navbar-buynow {
     float: right;
     margin-top: 8px;
-    background-color: #00bcd4;
-    color: white;
+    background-color: #0ed75a;
+    color: black;
     padding-left: 15px;
     padding-right: 15px;
+}
+.navbar-buynow:hover {
+    color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -112,9 +117,12 @@ body {
 }
 
 .banner-buynow {
-    background-color: #00bcd4;
-    color: white;
+    background-color: #0ed75a;
+    color: black;
     padding: 10px 30px;
+}
+.banner-buynow:hover {
+    color : white
 }
 
 .banner-title {
@@ -153,7 +161,7 @@ body {
 }
 
 .background-content, .background-content2 {
-    background-color: #00bcd482;
+    background-color: #daf9e6;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -269,9 +277,9 @@ body {
     width: 1em;
     height: 1em;
     font-size: 60px;
-    background-color: #00bcd4;
+    background-color: #0ed75a;
     border-radius: 0.5em;
-    box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
+    box-shadow: 0 0 0 0em rgba(#0ed75a, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     transform: translate3d(0, 0, 0) scale(1);
 }
 
@@ -318,19 +326,19 @@ body {
 @keyframes phone-outer {
     0% {
         transform: translate3d(0, 0, 0) scale(1);
-        box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
+        box-shadow: 0 0 0 0em rgba(#0ed75a, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
     33.3333% {
         transform: translate3d(0, 0, 0) scale(1.1);
-        box-shadow: 0 0 0 0em rgba(#00bcd4, 0.1), 0em 0.05em 0.1em rgba(#000000, 0.5);
+        box-shadow: 0 0 0 0em rgba(#0ed75a, 0.1), 0em 0.05em 0.1em rgba(#000000, 0.5);
     }
     66.6666% {
         transform: translate3d(0, 0, 0) scale(1);
-        box-shadow: 0 0 0 0.5em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
+        box-shadow: 0 0 0 0.5em rgba(#0ed75a, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
     100% {
         transform: translate3d(0, 0, 0) scale(1);
-        box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
+        box-shadow: 0 0 0 0em rgba(#0ed75a, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
 }
 
