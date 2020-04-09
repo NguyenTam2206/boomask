@@ -7,48 +7,72 @@
 
 body {
     font-family: RoobertBoo;
-    position: relative; 
+    position: relative;
 }
-#banner {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;color: black;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+#banner {
+    padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #1E88E5;
+}
+
+#section2 {
+    padding-top: 50px;
+    color: black;
+}
+
+#section3 {
+    padding-top: 50px;
+    color: black;
+    background-color: #f8f8f8;
+    padding-bottom : 50px;
+}
+
+#section4 {
+    padding-top: 50px;
+    color:rgba(43, 41, 45, 0.6);
+}
 
 /*Navbar*/
+
 .navbar-brand {
-    padding-top : 10px;
-    float : right;
+    padding-top: 10px;
+    float: right;
 }
+
 .navbar-toggle {
     float: left;
     margin-left: 15px;
 }
+
 .navbar-brand img {
-    width : 75px;
+    width: 75px;
 }
+
 .navbar-inverse {
     border-color: #a7a7a7;
     background-color: white;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color:black;
+    background-color: black;
     border-color: black;
 }
 
 .navbar-inverse .navbar-toggle:hover {
     background-color: black;
 }
+
 .navbar-inverse .navbar-toggle:hover .icon-bar {
     background-color: white;
 }
 
 .navbar-buynow {
-    float : right;
+    float: right;
     margin-top: 8px;
     background-color: #00bcd4;
-    color : white;
+    color: white;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -59,15 +83,15 @@ body {
 }
 
 .navbar-store, .navbar-hotline {
-    float : right;
+    float: right;
     margin-top: 10px;
     text-decoration: none;
-    color : black
+    color: black
 }
 
 @media (max-width: 767px) {
     .navbar-buynow {
-        margin-right : 15px;
+        margin-right: 15px;
     }
     .navbar-brand {
         position: fixed;
@@ -76,11 +100,13 @@ body {
 }
 
 /* Banner */
+
 #banner {
-    display : flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .banner-buynow {
     background-color: #00bcd4;
     color: white;
@@ -92,12 +118,13 @@ body {
 }
 
 /* Mask */
+
 .mask {
-    padding-top: 50px; 
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.img {
+.img, .img2 {
     background-color: bisque;
     position: absolute;
     z-index: 999;
@@ -105,9 +132,10 @@ body {
     width: 500px;
 }
 
-.background-content {
+.background-content, .background-content2 {
     background-color: #00bcd482;
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .img {
         margin-top: 20px;
@@ -115,10 +143,10 @@ body {
     }
     .background-content {
         padding-top: 70px;
-        padding-bottom : 70px;
+        padding-bottom: 70px;
         padding-left: 150px;
         padding-right: 70px;
-        margin-right : 80px;
+        margin-right: 80px;
     }
 }
 
@@ -129,22 +157,92 @@ body {
     }
     .background-content {
         padding-top: 70px;
-        padding-bottom : 70px;
+        padding-bottom: 70px;
         padding-left: 150px;
         padding-right: 120px;
-        margin-right : 80px;
+        margin-right: 80px;
     }
 }
+
 .content-title {
     font-size: 30px;
 }
 
-/* Phone Icon */  
-  .Phone {
+/* Function */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .img2 {
+        margin-top: 30px;
+        margin-left: 490px;
+    }
+    .background-content2 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 80px;
+        padding-right: 120px;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img2 {
+        margin-top: 40px;
+        margin-left: 580px;
+    }
+    .background-content2 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-left: 80px;
+    }
+}
+
+/* Lợi ích */
+
+.img3 {
+    background-color: bisque;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+    .img3 {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+/* Footer */
+
+.footer-product, .footer-mxh {
+    padding-top : 10px;
+    font-size : 22px;
+    color : black
+}
+
+.footer-tag {
+    margin-top : 35px;
+}
+
+.footer-tag a {
+    text-decoration: none;
+    color : rgba(43, 41, 45, 0.6);
+}
+
+.footer-tag a:hover {
+    text-decoration: none;
+    color : black;
+}
+
+/* Phone Icon */
+
+.Phone {
     position: fixed;
-    bottom : 20px;
+    bottom: 20px;
     right: 20px;
-    z-index : 1000;
+    z-index: 1000;
     display: block;
     margin: 0;
     width: 1em;
@@ -152,19 +250,16 @@ body {
     font-size: 60px;
     background-color: #00bcd4;
     border-radius: 0.5em;
-    box-shadow:
-      0 0 0 0em rgba(#00bcd4, 0),
-      0em 0.05em 0.1em rgba(#000000, 0.2);
+    box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     transform: translate3d(0, 0, 0) scale(1);
-  }
-  
-  .Phone::before,
-  .Phone::after {
+}
+
+.Phone::before, .Phone::after {
     position: absolute;
     content: "";
-  }
-  
-  .Phone::before {
+}
+
+.Phone::before {
     top: 0;
     left: 0;
     width: 1em;
@@ -173,9 +268,9 @@ body {
     border-radius: 100%;
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(0);
-  }
-  
-  .Phone::after {
+}
+
+.Phone::after {
     top: 0.25em;
     left: 0.25em;
     width: 0.5em;
@@ -185,87 +280,129 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     transform: translate3d(0, 0, 0);
-  }
-  
-  .Phone.is-animating {
+}
+
+.Phone.is-animating {
     animation: phone-outer 3000ms infinite;
-  }
-  .Phone.is-animation::before {
+}
+
+.Phone.is-animation::before {
     animation: phone-inner 3000ms infinite;
-  }
-  .Phone.is-animating::after {
+}
+
+.Phone.is-animating::after {
     animation: phone-icon 3000ms infinite;
-  }
-  
-  @keyframes phone-outer {
+}
+
+@keyframes phone-outer {
     0% {
-      transform: translate3d(0, 0, 0) scale(1);
-      box-shadow:
-        0 0 0 0em rgba(#00bcd4, 0),
-        0em 0.05em 0.1em rgba(#000000, 0.2);
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
     33.3333% {
-      transform: translate3d(0, 0, 0) scale(1.1);
-      box-shadow:
-        0 0 0 0em rgba(#00bcd4, 0.1),
-        0em 0.05em 0.1em rgba(#000000, 0.5);
+        transform: translate3d(0, 0, 0) scale(1.1);
+        box-shadow: 0 0 0 0em rgba(#00bcd4, 0.1), 0em 0.05em 0.1em rgba(#000000, 0.5);
     }
     66.6666% {
-      transform: translate3d(0, 0, 0) scale(1);
-      box-shadow:
-        0 0 0 0.5em rgba(#00bcd4, 0),
-        0em 0.05em 0.1em rgba(#000000, 0.2);
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow: 0 0 0 0.5em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
     100% {
-      transform: translate3d(0, 0, 0) scale(1);
-      box-shadow:
-        0 0 0 0em rgba(#00bcd4, 0),
-        0em 0.05em 0.1em rgba(#000000, 0.2);
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow: 0 0 0 0em rgba(#00bcd4, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
     }
-  }
-  
-  @keyframes phone-inner {
+}
+
+@keyframes phone-inner {
     0% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) scale(0);
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(0);
     }
     33.3333% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0) scale(0.9);
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(0.9);
     }
     66.6666% {
-      opacity: 0;
-      transform: translate3d(0, 0, 0) scale(0);
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
     }
     100% {
-      opacity: 0;
-      transform: translate3d(0, 0, 0) scale(0);
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
     }
-  }
-  
-  @keyframes phone-icon {
-    0% { transform: translate3d(0em, 0, 0); }
-    2% { transform: translate3d(0.01em, 0, 0); }
-    4% { transform: translate3d(-0.01em, 0, 0); }
-    6% { transform: translate3d(0.01em, 0, 0); }
-    8% { transform: translate3d(-0.01em, 0, 0); }
-    10% { transform: translate3d(0.01em, 0, 0); }
-    12% { transform: translate3d(-0.01em, 0, 0); }
-    14% { transform: translate3d(0.01em, 0, 0); }
-    16% { transform: translate3d(-0.01em, 0, 0); }
-    18% { transform: translate3d(0.01em, 0, 0); }
-    20% { transform: translate3d(-0.01em, 0, 0); }
-    22% { transform: translate3d(0.01em, 0, 0); }
-    24% { transform: translate3d(-0.01em, 0, 0); }
-    26% { transform: translate3d(0.01em, 0, 0); }
-    28% { transform: translate3d(-0.01em, 0, 0); }
-    30% { transform: translate3d(0.01em, 0, 0); }
-    32% { transform: translate3d(-0.01em, 0, 0); }
-    34% { transform: translate3d(0.01em, 0, 0); }
-    36% { transform: translate3d(-0.01em, 0, 0); }
-    38% { transform: translate3d(0.01em, 0, 0); }
-    40% { transform: translate3d(-0.01em, 0, 0); }
-    42% { transform: translate3d(0.01em, 0, 0); }
-    44% { transform: translate3d(-0.01em, 0, 0); }
-    46% { transform: translate3d(0em, 0, 0); }
-  }
+}
+
+@keyframes phone-icon {
+    0% {
+        transform: translate3d(0em, 0, 0);
+    }
+    2% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    4% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    6% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    8% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    10% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    12% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    14% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    16% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    18% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    20% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    22% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    24% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    26% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    28% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    30% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    32% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    34% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    36% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    38% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    40% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    42% {
+        transform: translate3d(0.01em, 0, 0);
+    }
+    44% {
+        transform: translate3d(-0.01em, 0, 0);
+    }
+    46% {
+        transform: translate3d(0em, 0, 0);
+    }
+}
