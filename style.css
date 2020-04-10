@@ -13,7 +13,7 @@ body {
 #banner {
     padding-top: 50px;
     color: #fff;
-    background-image: url(/assets/imgs/banner.gif);
+    background-image: url(./assets/imgs/banner.gif);
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -143,19 +143,19 @@ body {
     width: 500px;
 }
 .img {
-    background-image: url(/assets/imgs/img2.gif)
+    background-image: url(./assets/imgs/img2.gif)
 }
 .imgmobile {
-    background-image: url(/assets/imgs/img2.gif);
+    background-image: url(./assets/imgs/img2.gif);
     height : 300px;
     background-position: center;
 }
 
 .img2 {
-    background-image: url(/assets/imgs/img3.gif)
+    background-image: url(./assets/imgs/img3.gif)
 }
 .img2mobile {
-    background-image: url(/assets/imgs/img3.gif);
+    background-image: url(./assets/imgs/img3.gif);
     height : 300px;
     background-position: center;
 }
@@ -229,7 +229,7 @@ body {
 /* Lợi ích */
 
 .img3 {
-    background-image: url(/assets/imgs/img4.gif);
+    background-image: url(./assets/imgs/img4.gif);
     background-position: center;
     height: 400px;
     margin-top: 40px;
